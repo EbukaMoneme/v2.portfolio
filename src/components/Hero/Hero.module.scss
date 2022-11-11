@@ -1,0 +1,44 @@
+.container {
+	height: 125vh;
+	display: flex;
+	justify-content: center;
+  position: relative;
+	overflow: hidden;
+}
+
+.heroBackground {
+	display: block;
+	background: linear-gradient(75.4deg,#121212 25%,#112144 37.5%,#3d0f28 62.5%,#121212 75% calc((1 + 0.968) * max(100vw, 100vh)));
+	background-image: linear-gradient(75.4deg, rgb(18, 18, 18) 25%, rgb(17, 33, 68) 37.5%, rgb(61, 15, 40) 62.5%, rgb(18, 18, 18) 75%);
+	height: 120vh;
+	position: absolute;
+  top: 0;
+  width: 200vw;
+	// left: -50vw;
+  z-index: -1;
+	border-radius: 0 0 50% 50%;
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 80vw;
+	width: min(1160px,calc(100% - 48px));
+	height: 100vh;
+	color: white;
+	font-weight: bold;
+}
+
+.title {
+	text-transform: uppercase;
+	font-size: calc((1.6 - 1) * 1.2vw + 1rem);
+	margin-bottom: 1em;
+}
+.desc {
+	text-transform: uppercase;
+	font-size: calc((3.2 - 1) * 1.2vw + 1rem);
+}
